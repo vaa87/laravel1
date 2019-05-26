@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="27960139-49e9-4b14-8b05-3206316d96d4" name="Default" comment="0.0.4 env файл + изменения в mysql">
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lombard.loc.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/database/migrations/2019_05_25_180015_create_task_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/database/migrations/2019_05_25_180015_create_task_table.php" afterDir="false" />
     </list>
@@ -70,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -337,11 +343,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558869139503</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="0.0.4 - .idea">
+      <created>1558870003229</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1558870003229</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27780000" />
+    <option name="totallyTimeSpent" value="28066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
@@ -350,7 +363,7 @@
       <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.4897059" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.5661765" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32205883" />
       <window_info anchor="bottom" id="Database Console" weight="0.20735294" />
@@ -416,7 +429,8 @@
     <MESSAGE value="0.0.3 Создание 1-ой тестовой страницы" />
     <MESSAGE value="0.0.4 env файл + изменения в mysql" />
     <MESSAGE value="0.0.2 удаление папки mysql из репозитория" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.0.2 удаление папки mysql из репозитория" />
+    <MESSAGE value="0.0.4 - .idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.0.4 - .idea" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/www/app/Http/Controllers/SiteController.php" />
@@ -585,7 +599,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
         </state>
       </provider>
     </entry>
