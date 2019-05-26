@@ -3,54 +3,54 @@
 @section('content')
     <div class="container">
         <!-- Форма создания задачи... -->
+        <div class="card mb-5">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Новая задача</h4>
+            </div>
+            <div class="card-body">
+                <!-- Отображение ошибок проверки ввода -->
+            @include('common.errors')
 
-        <!-- Bootstrap шаблон... -->
+            <!-- Форма новой задачи -->
+                <form action="{{ url('task') }}" method="POST" class="form-horizontal">
+                {{ csrf_field() }}
 
-        <div class="panel-body">
-            <!-- Отображение ошибок проверки ввода -->
-        @include('common.errors')
+                <!-- Имя задачи -->
+                    <div class="form-group">
+                        <label for="task" class="col-sm-3 control-label">Задача</label>
 
-        <!-- Форма новой задачи -->
-            <form action="{{ url('task') }}" method="POST" class="form-horizontal">
-            {{ csrf_field() }}
-
-            <!-- Имя задачи -->
-                <div class="form-group">
-                    <label for="task" class="col-sm-3 control-label">Задача</label>
-
-                    <div class="col-sm-6">
-                        <input type="text" name="name" id="task-name" class="form-control">
+                        <div class="col-sm-6">
+                            <input type="text" name="name" id="task-name" class="form-control">
+                        </div>
                     </div>
-                </div>
 
-                <!-- Кнопка добавления задачи -->
-                <div class="form-group">
-                    <div class="col-sm-offset-3 col-sm-6">
-                        <button type="submit" class="btn btn-default">
-                            <i class="fa fa-plus"></i> Добавить задачу
-                        </button>
+                    <!-- Кнопка добавления задачи -->
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-6">
+                            <button type="submit" class="btn btn-outline-secondary">
+                                <i class="fa fa-plus"></i> Добавить задачу
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
 
-        <!-- Текущие задачи -->
-        @if (count($tasks) > 0)
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    Текущая задача
+        <div class="card">
+            <!-- Текущие задачи -->
+            @if (count($tasks) > 0)
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Текущие задача</h4>
                 </div>
 
-                <div class="panel-body">
-                    <table class="table table-striped task-table">
-
-                        <!-- Заголовок таблицы -->
-                        <thead>
-                        <th>Task</th>
-                        <th>&nbsp;</th>
+                <div class="card-body">
+                    <table class="table">
+                        <thead class="">
+                        <tr>
+                            <th>Задачи</th>
+                            <th></th>
+                        </tr>
                         </thead>
-
-                        <!-- Тело таблицы -->
                         <tbody>
                         @foreach ($tasks as $task)
                             <tr>
@@ -75,7 +75,7 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
+        </div>
     </div>
     @endif
 @endsection
