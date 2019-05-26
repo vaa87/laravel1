@@ -12,10 +12,10 @@ services:
             - "443:443"
         # монтируем директории, слева директории на основной машине, справа - куда они монтируются в контейнере
         volumes:
-            - ./docker/hosts:/etc/nginx/conf.d
-            - ./www:/var/www
-            - ./logs:/var/log/nginx
-            - ./docker/certs:/etc/nginx/ssl
+            - ./docker/hosts:/etc/nginx/conf.d:cached
+            - ./www:/var/www:cached
+            - ./logs:/var/log/nginx:cached
+            - ./docker/certs:/etc/nginx/ssl:cached
         # nginx должен общаться с php контейнером
         links:
             - php
@@ -28,7 +28,7 @@ services:
             - mysql
         # монтируем директорию с проектами
         volumes:
-            - ./www:/var/www
+            - ./www:/var/www:cached
     mysql:
         container_name: databases
         image: mysql:8
